@@ -22,7 +22,7 @@ bool game_init(void) {
         return false;
     }
 
-    renderer_init(&renderer, 4, 4);
+    renderer_init(&renderer, width, height);
 
     running = true;
     return true;
@@ -44,7 +44,7 @@ void game_update(void) {
 }
 
 void game_draw(void) {
-    renderer_clear(&renderer, 0xFF000000);
+    renderer_clear(&renderer, 0xFF10BB20);
 }
 
 void game_run(void) {
