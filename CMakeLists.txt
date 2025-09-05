@@ -9,7 +9,8 @@ find_package(SDL2 REQUIRED)
 
 add_executable(3drenderer src/main.c
         src/game.h
-        src/gidreklib/renderer.h)
+        src/gidreklib/renderer.h
+        src/gidreklib/renderer.c)
 
 target_include_directories(3drenderer PRIVATE ${SDL2_INCLUDE_DIRS})
 target_link_libraries(3drenderer PRIVATE ${SDL2_LIBRARIES})
