@@ -65,3 +65,7 @@ fastlane/test_output
 .idea/
 
 build-debug/
+
+.vs/
+out/
+CMakeSettings.json
