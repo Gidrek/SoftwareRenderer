@@ -41,5 +41,13 @@ void renderer_clear(Renderer *r, uint32_t color) {
 }
 
 void renderer_draw_pixel(Renderer *r, int x, int y, uint32_t color) {
+    if (!r) {
+        return;
+    }
 
+    if (x < 0 || x > r->width || y < 0 || y > r->height) {
+        return;
+    }
+
+    r->framebuffer[(y * r->width) + x] = color;
 }

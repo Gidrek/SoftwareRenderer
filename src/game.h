@@ -21,6 +21,8 @@ void game_clean(void);
 static Renderer renderer;
 static SDL_Renderer *sdl_renderer = NULL;
 static SDL_Window *window = NULL;
+static SDL_Texture *texture = NULL;
+static SDL_Rect rect = { 0 };
 
 static bool running = false;
 
